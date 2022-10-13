@@ -1,10 +1,11 @@
 $.ajax({
-    url: 'https://www.omdbapi.com/?apikey=dca61bcc&i=',
-    success: result => {
-        const movies = result.Search;
-        let cards = '';
-        movies.forEach(m => {
-            cards += `<div class="col-md-4 my-3">
+  url: "http://www.omdbapi.com/?i=tt3896198&apikey=ae614c3f&s=avengers",
+
+  success: (results) => {
+    const movies = results.Search;
+    let cards = "";
+    movies.forEach((m) => {
+      cards += `<div class="col-md-4 my-3">
             <div class="card">
                 <img src="${m.Poster}" class="card-img-top" >
                 <div class="card-body">
@@ -18,12 +19,12 @@ $.ajax({
     $(".movies-container").html(cards);
 
     // ketika tombol detail di klik
-    $(".modal-detail-button").on(`click`,function(){
-        $.aja
-    })
-    },
+    $(".modal-detail-button").on(`click`, function () {
+      $.ajax;
+    });
+  },
 
-    error: (e) => {
-        console.log(e.responseText);
-    }
+  error: (e) => {
+    console.log(e.responseText);
+  },
 });
