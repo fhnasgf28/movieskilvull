@@ -15,6 +15,11 @@ body{
     margin: 0;
 }
 
+.Skilvul {
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
 
 header{
     padding:1rem;
